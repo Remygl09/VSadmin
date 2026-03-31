@@ -3,8 +3,9 @@
  * Throws with a clear message if any are missing.
  */
 export function validateEnv() {
-  const required = ['VITE_SUPABASE_URL', 'VITE_SUPABASE_PUBLISHABLE_KEY'] as const;
-  const missing = required.filter((key) => !import.meta.env[key]);
+  const missing: string[] = [];
+  if (!import.meta.env.VITE_SUPABASE_URL) missing.push('VITE_SUPABASE_URL');
+  if (!import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY) missing.push('VITE_SUPABASE_PUBLISHABLE_KEY');
 
   if (missing.length > 0) {
     throw new Error(
