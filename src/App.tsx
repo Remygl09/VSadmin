@@ -24,7 +24,7 @@ const App = () => (
     <AuthProvider>
       <TooltipProvider>
         <Toaster />
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
           <Routes>
             <Route path="/" element={<Navigate to="/login" replace />} errorElement={<ErrorBoundary />} />
             <Route path="/login" element={<LoginPage />} errorElement={<ErrorBoundary />} />
