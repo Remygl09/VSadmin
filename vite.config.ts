@@ -14,7 +14,7 @@ export default defineConfig({
   plugins: [react()],
   define: {
     'import.meta.env.VITE_SUPABASE_URL': JSON.stringify('https://xkoenpbrgzhheyzrozcd.supabase.co'),
-    'import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY': JSON.stringify('sb_publishable_QLnPzkY5iMbgkBfPncMKWA_mbF9xLNz'),
+    'import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY': JSON.stringify('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inhrb2VucGJyZ3poaGV5enJvemNkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ5MDg3NjAsImV4cCI6MjA5MDQ4NDc2MH0.dBwjOyY9kdW_WKE7gmYaDsDAZLDcLKRhUbixQJDXrNw'),
   },
   resolve: {
     alias: {
