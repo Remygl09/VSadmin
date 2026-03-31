@@ -12,6 +12,10 @@ export default defineConfig({
     },
   },
   plugins: [react()],
+  define: {
+    'import.meta.env.VITE_SUPABASE_URL': JSON.stringify('https://xkoenpbrgzhheyzrozcd.supabase.co'),
+    'import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY': JSON.stringify('sb_publishable_QLnPzkY5iMbgkBfPncMKWA_mbF9xLNz'),
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
