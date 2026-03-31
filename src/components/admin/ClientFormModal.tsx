@@ -99,10 +99,8 @@ export default function ClientFormModal({
       const { error } = await supabase.from('projects').insert({
         company_name: trimmedCompany,
         founder_name: trimmedFounder,
-        email: form.email.trim() || null,
-        phone: form.phone.trim() || null,
         notes: form.notes.trim() || null,
-        status: 'prospect',
+        status: 'lead',
       });
 
       if (error) throw error;
